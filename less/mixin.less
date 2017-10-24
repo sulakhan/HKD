@@ -1,0 +1,20 @@
+/**************************Tranistion*************************/
+.transition(@argument) {
+	-webkit-transition:@argument;      /*   For Sfari         */
+	   -moz-transition:@argument;      /*   For Mozilla      */
+	    -ms-transition:@argument;      /*   For M.S         */
+	       transition: @argument;      /*  Standard Code   */
+}
+/**************************BORDER-RADIUS*************************/
+.border-radius (@radius) {
+    border-radius: @radius;
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+}
+/**************************Gradient*************************/
+.gradient (@gradient) {
+    background: linear-gradient(@gradient);
+    background: -webkit-linear-gradient(@gradient);
+    background:    -moz-linear-gradient(@gradient);
+    background:      -o-linear-gradient(@gradient);
+}

@@ -1,0 +1,1243 @@
+@font-face {
+	font-family: ProximaNovaBlack;
+	src: url(../fonts/ProximaNovaBlack.otf);
+}
+@font-face {
+	font-family: ProximaNovaRegular;
+	src: url(../fonts/ProximaNovaRegular.woff);
+}
+ul,li {
+	margin: 0;
+	padding: 0;
+}
+/*** *****************************  Main  Page Start  ********************************** ***/
+.main {
+	background-color: @main-color;
+}
+	/*** *****************************  Navbar Start  ********************************** ***/
+	nav {
+		margin-top: 0.4%;
+		ul {
+			margin-top: 0.2%;
+		}
+		li {
+			display:inline;
+			padding: 0% 8% 0% 0%;
+			font-family: ProximaNovaBlack;
+			outline: none;
+			font-weight: bold;
+			font-size: 12px;
+			a {
+				color:@top-nav;
+				text-decoration: none;
+				transition: all 0.2s ease-in-out 0.1s;
+				&:hover {
+					text-decoration:none;
+					color:@top-nav;
+					opacity:0.6;
+				}
+				img {
+					position: relative;
+					margin-right: 1%;
+					cursor: pointer;
+					outline: 0;
+					width:6%;
+				}
+				.badge {
+					position: absolute;
+					margin:0 0 1% -4%;
+					padding: 3px 6px;
+					background-color:@badge-color;
+				}
+			}
+			.nav-book {
+				margin-right: 1%;
+				img {
+					width:4%;
+				}
+			}
+
+		}
+			/*.top-nav-bar {
+				width:100%;
+			}
+				.top-left-nav {
+					width:40%;
+				}
+				.top-left-nav li {
+					float:left;
+					display: inline-block;
+				}
+				.top-right-nav {
+					width:46%;
+				}
+				.top-right-nav li {
+					float:right;
+					text-align: right;
+				}*/
+	}
+	/*** *****************************  Navbar End  ********************************** ***/
+/*** *****************************  Header Start  ********************************** ***/
+.header {
+	margin: 2.7% 0 1% 3%; 
+	.header-left-part {
+		padding-left: 1.1%;
+		color:@top-nav;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	.header-logo {
+		cursor: pointer;
+		img {
+			margin-top: 1.7%;
+		}
+	}
+	.header-left-part {
+		a {
+			color:@top-nav;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out 0.1s;
+			&:hover {
+				opacity:0.5;
+			}
+		}
+	}
+	.header-right-part {
+		padding-right: 4.8%;
+		color:@top-nav;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 12px;
+		.shoping-text {
+			position: relative;
+		}
+		.badge {
+			position: absolute;
+			margin:-2% 0 0 -2%;
+			padding: 3px 6px;
+			background-color:@badge-color;
+		}
+		a {
+			color:@top-nav;
+			text-decoration: none;
+			transition: all 0.2s ease-in-out 0.1s;
+			&:hover {
+				opacity:0.5;
+			}
+		}
+	}
+}
+/*** ***************************** Header End ********************************** ***/
+/*** ***************************** Navbar Second Start ********************************** ***/
+.bottom-navs {
+	margin-left: -1%;
+	}
+	.col-nav {
+		margin-right: -3%;
+	}
+	.navbar-bottom {
+		margin:3.1% 0 1% 0;
+		li {
+			margin:0;
+			padding: 0 3.6% 0 0;
+			font-size: 14px;
+			a {
+				outline: none;
+				text-decoration: none;
+				&:hover {
+					color:@top-nav;
+					opacity: 0.6;
+					text-decoration:none;
+				}
+			}
+		}
+		.act {
+			color: @badge-color;
+			a {
+				color:@badge-color;
+				outline: none;
+				text-decoration: none;
+				&:hover {
+					color:@badge-color;
+					opacity:0.6;
+				}
+			}
+		}
+		.serach-button {
+			margin-top: -1%;
+			position: relative;
+			
+			&:hover .serach-input {
+				visibility: visible;
+			}
+		}
+		.serach-input {
+			position: absolute;
+			visibility: hidden;
+		}
+		.search-icon {
+			margin-top: -21%;
+			padding: 10px 9px;
+			border-radius: 0px;
+			cursor: pointer;
+			background-color: @yellow-clor;
+			border:1px solid @white;
+		}
+		.search-dropdown {
+			padding: 0;
+			border-radius: 0px;
+			top: 93%;
+			left:  -1105%;
+			border:0px solid@white;
+			box-shadow: 0 0px 0px rgba(0, 0, 0, 0); 
+			input {
+				padding: 0.7%;
+				color: @serach-input;
+				font-size:normal;
+				border:4px solid @yellow-clor;
+			}
+		}
+		.dropdown-menu.columns-4 {
+			border:1px solid @white;
+			background-color:@main-color;
+			border-radius: 0px;
+			box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+			min-width: 966%;
+			top:133%;
+			.dropdown-menu li a {
+				padding: 5px 15px;
+				outline: none;
+			}
+			.multi-column-dropdown {
+				list-style: none;
+				.muti-column-dropdown-heading {
+					a {
+						margin: 7.1% 22% 8.5% 3%;
+						color:@top-nav;
+						outline: none;
+						line-height: 0;
+						font-weight: bold;
+					}
+				}
+				.muti-column-dropdown-sub-menu {
+					color:@top-nav;
+					font-size: 12px;
+					a {
+						outline: none;
+						margin: -0.9% 0  0 3%;
+					}
+				}
+				img {
+					margin-left: -1%;
+					margin-top: -2%;
+					width:100%;
+				}
+				.muti-column-dropdown-heading-close {
+					a {
+						outline: none;
+						margin: 7.1% 22% 8.5% 3%;
+						color:@top-nav;
+						line-height: 0;
+						font-weight: bold;
+					}
+				}
+			}
+			.multi-column-dropdown li a {
+				display: block;
+				clear: both;
+				color: #333;
+				outline: none;
+				line-height: 0;
+				white-space: normal;
+			}
+			.multi-column-dropdown li a:hover {
+				text-decoration: none;
+				color: #262626;
+				background-color: #f5f5f5;
+			}
+		}
+	}
+	.navbar-header {
+		.navbar-toggle {
+			background-color: @badge-color;
+		}
+		.icon-bar {
+			background: @white;
+		}
+	}
+/*** ***************************** Navbar Second End ********************************** ***/
+.red-band {
+	margin-top: 0.1%;
+	padding: 0.2%;
+	color:@white;
+	text-align: center;
+	font-family: ProximaNovaBlack;
+	font-weight: bold;
+	background-color: @badge-color;
+}
+.slider {
+	margin:1.2% 0 1% -1%;
+	img {
+		width:100%;
+	}
+}
+.gallery {
+	margin:1.7% 0 0 -1%;
+	cursor: pointer;
+	img {
+		margin-left: 1%;
+		width: 98.3%;
+	}
+}
+.shopping-slider {
+		margin: 1.8% 0 1.7% -1%;
+	h4 {
+		text-align: center;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 16px;
+	}
+}
+.banner-red {
+	text-align: center;
+	background-color: @badge-color;
+	h4 {
+		margin-left: 2.4%;
+		color:@white;
+		padding: 1.7% 0 1.7% 0;
+	}
+	input {
+		margin: -3% 0 2% 2%;
+		padding: 0.6% 0.3% 0.6% 1.7%;
+		color:@badge-color;
+		font-size: 14px;
+		font-weight: bold;
+		border:none;
+	}
+	button {
+		margin: -3.8% -0.3% -4%-0.9%;
+		padding: 0.8% 0.5% 0.7% 0.5%;
+		color:@white;
+		font-weight: bold;
+		font-size: 12px;
+		border:none;
+		background:@top-nav;
+	}
+	.search-bar {
+		margin-bottom: 2%;
+	}
+}
+.vist-heading {
+	color:@top-nav;
+	margin-bottom: 2%;
+	h4{
+		text-align: center;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+}
+.featured-img {
+	margin-left: -2%;
+	.featured-img1 {
+		.featuered-light {
+			position: relative;
+			img {
+				width: 98%;
+			}
+		}
+		.featured-col-text {
+			position: absolute;
+			margin: -7% 6% 2% 10.1%;
+			padding: 2% 2% 2% 0%;
+			color:@top-nav;
+			text-align: center;
+			background-color: @white;
+			font-weight: bold;
+			font-size: 16px;
+			width:72%;
+		}
+		.featured-para {
+			margin-top: 4%;
+			font-size: 12px;
+			font-family: ProximaNovaRegular;
+			transition: all 0.2s ease-in-out 0.1s;
+			a {
+				position: relative;
+				color:@badge-color;
+				outline: none;
+				font-weight: bold;
+				font-size: 15px;
+				font-family: ProximaNovaBlack;
+				text-decoration: none;
+				&:hover {
+					text-decoration:none;
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+}
+/******************************* Footer Follow Start *************************/
+.footer-follow {
+	color:@top-nav;
+	margin-bottom: 2%;
+	text-align: center;
+	h4{
+		text-align: center;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+	img {
+		margin-bottom: 4%;
+		transition: all 0.2s ease-in-out 0.1s;
+		&:hover {
+			opacity:0.7;
+		}
+	}
+	.footer-list {
+		ul {
+			margin-top: 0.4%;
+			li {
+				padding-left: 2.2%;
+				display: inline;
+				font-family: ProximaNovaRegular;
+				a {
+					color:@top-nav;
+					text-decoration: none;
+					transition: all 0.2s ease-in-out 0.1s;
+					&:hover {
+						opacity:0.6;
+					}
+				}
+			}
+		}
+	}
+}
+.our-blog{
+	margin-top: 1%;
+	color:@badge-color;
+	text-align: center;
+	h4 {
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+}
+/******************************* Footer Follow End *************************/
+/*** *****************************  Product List Page Start  ********************************** ***/
+section {
+	margin:0.8% 0 1% 0;
+	.sorting-list {
+		margin-left: 0%;
+		padding: 2%;
+		background-color: @main-color;
+    	width: 97%;
+	}
+	.sec-celling-heading {
+		margin-bottom: 2%;
+		h3 {
+			text-align: center;
+			font-family: ProximaNovaRegular;
+		}
+		.sec-fiter-list {
+			text-align: center;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+			cursor: pointer;
+			.bands {
+				color:@white;
+				background-color: @top-nav;
+				width:40%;
+			}
+		}
+		.sec-sort-list {
+			margin-top: 2%;
+			text-align: center;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+			cursor: pointer;
+			input {
+				border:1px solid @top-nav;
+			}
+			.check-input {
+				margin-top: 12%;
+			}
+		}
+	}
+}
+.pagi {
+	margin: 2% 0 2% -4%;
+	.products {
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+	.prod16 {
+		color:@white;
+		background-color: @top-nav;
+	}
+	.left-arr {
+		margin-right: 0.2%;
+		padding: 0.5%;
+		color:@white;
+		border-radius: 2px;
+		background-color: @left-arrow;
+	}
+	.right-arr {
+		padding: 0.5%;
+		color:@white;
+		border-radius: 2px;
+		background-color: @top-nav;
+	}
+}             
+.gallery {
+	margin-left: -2%;
+}
+.img-gallery {
+	img {
+		width:70%;
+	}
+	.bubble {
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	.italy {
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 10px;	
+	}
+	.add-wish {
+		margin-top: 30%;
+		font-family: ProximaNovaRegular;
+		visibility: hidden;
+		background-color: @yellow-clor;
+		width:90%;
+		h6 {
+			margin-right:2%;
+			font-weight: bold;
+			font-size: 13px;
+		}
+	}
+	&:hover .add-wish{
+		border: 1px dotted @top-nav;
+		visibility: visible;
+	}
+	.add-wish-black {
+		margin-top: 15%;
+		font-family: ProximaNovaRegular;
+		visibility: hidden;
+		background-color: @yellow-clor;
+		width:90%;
+		h6 {
+			margin-right:2%;
+			font-weight: bold;
+			font-size: 13px;
+		}
+	}
+	&:hover .add-wish-black{
+		border: 1px dotted @top-nav;
+		visibility: visible;
+	}
+	.focain {
+		margin:12% 0 0 -7%;
+		img {
+			width:375%;
+		}
+	}
+	.red-rate {
+		color:@badge-color;
+	}
+}
+/*** *****************************  Product List Page End  ********************************** ***/
+/*** *****************************  Product Detail Page Start  ********************************** ***/
+.caru-slider {
+	margin-left: -3%;
+}
+.breadcrumbs {
+	border-bottom: 1px dotted @border-color;
+	span {
+		margin-right: 3.7%;
+		a {
+			color: @left-arrow;
+			text-decoration: none;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+		}
+	}
+	.download {
+		a {
+			color:@top-nav;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+			transition: all 0.2s ease-in-out 0.1s;
+			&:hover {
+				opacity:0.6;
+			}
+		}
+	}
+}
+.pdf-images {
+	margin: 2% 0 1% 0;
+	span {
+		margin:1% 0 1% 8%;
+		color:@border-color;
+		vertical-align: middle;
+		font-family: ProximaNovaRegular;
+	}
+}
+.download-text {
+	margin: 5% -32% 1% 12%;
+	a {
+		color:@top-nav;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		transition: all 0.2s ease-in-out 0.1s;
+		&:hover {
+			color:@top-nav;
+			text-decoration:none;
+			opacity: 0.6;
+		}
+	}
+}
+/*** *****************************  Product Detail Page End  ********************************** ***/
+/*** *****************************  Asidebar Start  ********************************** ***/
+.asidebar {
+	background-color: @main-color;
+	margin:2% 0 0 3%;
+	.aside-devil {
+		margin-top: 3%;
+		font-size: 18px;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+	.aside-ceilling {
+		font-family: ProximaNovaRegular;
+	}
+	.brand-div {
+		margin-top:1%;
+		.brand-ceilling {
+			font-family: ProximaNovaRegular;
+		}
+		.slamp-text {
+			color:@top-nav;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+		}
+	}
+	strike {
+		border-color:red;
+		color:@top-nav;
+		font-family: ProximaNovaBlack;
+	}
+	.slamp-text-rate {
+		color:@top-nav;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.aside-pagi {
+		margin: -13% 0 2% 69%;
+		.aside-pagi-list {
+			display: block;
+			border-radius:0px;
+			li {
+				a {
+					color:@top-nav;
+				}
+			}
+		}
+	}
+	.aside-input {
+		position: relative;
+		input {
+			padding: 2%;
+			border:1px solid @top-nav;
+		}
+	}
+	.toggle {
+		position: absolute;
+		margin: -7.4% 0 0 83%;
+		img {
+			width:100%;
+		}
+	}
+	.aside-list {
+		margin-top: 2.5%;
+		li {
+			font-family: ProximaNovaRegular;
+			font-weight: bold; 	
+		}
+	}
+	.aside-star {
+		margin-top: -3%;
+		span {
+			font-family: ProximaNovaRegular;
+			font-weight: bold;
+		}
+	}
+	.aside-every {
+		span {
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+		}
+	}
+	.add-to-cart {
+		margin: 5% 0 2% 25%;
+		padding: 1% 2% 1% 2%;
+		text-align: center;
+		background-color: @badge-color;
+		transition: all 0.2s ease-in-out 0.1s;
+		width:50%;
+		a {
+			color:@white;
+			font-family: ProximaNovaRegular;
+			&:hover {
+				color:@white;
+				text-decoration:none;
+			}
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	.add-to-wish {
+		margin: 5% 0 2% 25%;
+		padding: 1% 2% 1% 2%;
+		text-align: center;
+		background-color: @white;
+		border: 2px solid #ccc;
+		border-radius: 2px;
+		transition: all 0.2s ease-in-out 0.1s;
+		width:50%;
+		a {
+			color:@cart-color;
+			font-family: ProximaNovaRegular;
+			font-weight: bold;
+			&:hover {
+				color:@cart-color;
+				text-decoration:none;
+			}
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+	.para-text {
+		margin:2% 0 4% 0;
+		text-align:center;
+		font-family: ProximaNovaRegular;
+	}
+	.social-icon-text {
+		margin:8% 0 2% 0;
+		text-align: center;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		span {
+			margin-left: 3%;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out 0.1s;
+			&:hover {
+				opacity:0.6;
+			}
+		}
+	}
+	.aside-retailer {
+		background-color: @badge-color;
+		p {
+			margin:6% 0 4% 0;
+			padding: 2%;
+			font-family: ProximaNovaRegular;
+			color:@white;
+		}
+	}
+	.aside-contact {
+		h6 {
+			color:@top-nav;
+			font-family: ProximaNovaBlack;
+			font-weight: bold;
+			font-size: 13px;
+		}
+	}
+	.aside-address {
+		font-size: 10px;
+		font-family: ProximaNovaRegular;
+		font-weight: bold;
+	}
+	.add-to-shop {
+		margin: 9% 3% 3% 4%;
+		padding: 3% 3% 4% 2%;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+		font-size: 8px;
+		text-align: center;
+		border-radius: 50%;
+		background:@badge-color;
+		transition: all 0.2s ease-in-out 0.1s;
+		width:55px;
+		height:55px;
+		a {	
+			color:@white;
+			text-decoration: none;
+		}
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+/*** *****************************  /Asidebar End  ********************************** ***/
+.sec-heading {
+	background-color: @white;
+	border-bottom:1px dotted @border-color;
+	h4 {
+		margin-right: 6%;
+		text-align: center;
+		font-family: ProximaNovaBlack;
+		font-weight: bold;
+	}
+}
+.pro-detail-slider {
+	margin: -6% 0 3%;
+	background-color: @white;
+}
+/*** *****************************  Product Detail Page End  ********************************** ***/
+/*** *****************************  Media Query 320px Mobile View ********************************** ***/
+	@media (max-width: 320px) {
+		nav {
+			.top-left-nav {
+				margin-left: 7%;
+			}
+			li {
+				padding: 1.4% 8% 0.3% 0%;
+				a {
+					&:hover {
+						opacity:0.6;
+					}
+					img {
+						width:11%;
+						margin-right: 2%;
+					}
+					.badge {
+						margin:0 0 1% -7%;
+					}
+				}
+				.nav-book {
+					margin-right: 1%;
+					img {
+						width:11%;
+						height:21px;
+					}
+				}
+			}
+		}
+		/*** *****************************  Header Start ********************************** ***/
+		.header {
+			.header-left-part {
+				margin: 7% 0 7% 0;
+				text-align: center;
+			}
+			.header-logo {
+				margin-bottom: 7%;
+				img {
+					width:100%;
+					text-align: center;
+				}
+			}
+			.header-right-part {
+				margin: 7% 0 7% 0;
+				text-align: center;
+			}
+		}
+		.bottom-navbar {
+			margin-right: 4%;
+		}
+		/*** ***************************** Header End ********************************** ***/
+		/*** ***************************** Navbar Start ********************************** ***/
+		.navbar-bottom {
+			li { 
+				display: block;
+				margin: 5% 0 2% 0;
+				width: 100%;
+			}
+		}
+		.slider {
+			margin-top: 5%;
+		}
+		.shopping-slider {
+			margin-bottom: -22%;
+		}
+		.gallery {
+			img {
+				width:93%;
+			}
+		}
+		/*** ***************************** Navbar End ********************************** ***/
+		.img-gallery {
+			img {
+				margin: auto;
+			}
+			.bubble {
+				margin:3% 0 0 15%;
+				font-size: 12px;
+			}
+			.italy {
+				margin-left: 15%;
+				font-size: 12px;
+			}
+			.focain {
+				img {
+					width: 24%;
+					margin-left: 22%;
+				}
+			}
+		}
+		.pagi-dot {
+			margin-top: 12%;
+		}
+		/*** *****************************  Product List Page Start  ********************************** ***/
+		.sec-fiter-list {
+			span {
+				margin-left: 5%;
+				display: block;
+				text-align: center;
+				width:100%;
+			}
+		}
+		.sec-sort-list {
+			span {
+				margin-left: 5%;
+				display: block;
+				text-align: center;
+				width:100%;
+			}
+		}
+		.pagi {
+			display: block;
+			width:100%;
+		}
+		.img-gallery {
+			/*.focain {
+				text-align:center;
+				img {
+					width:41%;
+				}
+			}*/
+		}
+		.banner-red {
+			button {
+				margin: -3.8% -1.3% -9.9%;
+				padding: 1.3% 0.6% 1.1%;
+			}
+		}
+		/*** *****************************  Product List Page End  ********************************** ***/
+		/*** *****************************  Product Detail Page Strat  ********************************** ***/
+		.breadcrumbs {
+			font-size: 6px;
+		}
+
+		.download-text {
+			margin: 5% 60% 1% 12%;
+		}
+		.asidebar {
+			padding:1%;
+			width:100%;
+			.aside-pagi {
+				margin-left: 61%;
+				margin-top: -15%;
+			}
+			.aside-input {
+				input {
+					width:100%;
+				}
+			}
+			.toggle {
+				margin: -9% 0 0 80%;
+				img {
+					width:100%;
+				}
+			}
+			.add-to-shop {
+				margin: -21% 7% 3% 5%;
+			}
+		}
+		/*** *****************************  Product Detail Page End  ********************************** ***/
+		.connected-carousels {
+			.stage {
+				width:100%;
+					.carousel .carousel-stage {
+						width:20%;
+					img {
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+	/*** *****************************  Media Query 320px Mobile View ********************************** ***/
+	/*** *****************************  Media Query 767px Tablet View ********************************** ***/
+	@media (min-width: 321px) and (max-width: 767px) {
+		nav {
+			margin-top: 2.4%;
+			.top-left-nav {
+				ul {
+					margin:-1% 28% 0 2%;
+				}
+			}
+			.right-nav {
+				text-align: center;
+				ul {
+					margin-top: -3%;
+					margin-left: 63.8%;
+				}
+				li {
+					.whistle-img {
+						img {
+							width: 13%;
+						}
+					}
+				}
+				.nav-book {
+					img {
+						width:7.7%;
+					}
+				}
+				.badge {
+					margin-left: -3%;
+				}
+			}
+		}
+		header {
+			.header-left-part {
+				margin-left: 3%;
+			}
+			.header-logo {
+				margin:-6.5% 0 3.2% 30%;
+				img {
+					width:62%;
+				}
+			}
+			.header-right-part {
+				margin:-10% 1% 0 0;
+				.shoping-text {
+					.badge {
+						margin-top: 2%;
+						margin:-1% 0 0 -0.9%;
+					}
+				}
+			}
+		}
+		.gallery {
+			margin-left:-2%;
+			width:100.2%;
+		}
+		.img-gallery {
+			.bubble {
+				margin:3% 0 0 15%;
+				font-size: 12px;
+			}
+			.italy {
+				margin-left: 15%;
+				font-size: 12px;
+			}
+			.focain {
+				img {
+					width: 24%;
+					margin-left: 22%;
+				}
+			}
+		}
+		nav {
+			.serach-input {
+				.dropdown {
+					.search-dropdown {
+						padding: 0;
+						border-radius: 0px;
+						top: 93%;
+						left:  -1105%;
+						border:0px solid@white;
+						box-shadow: 0 0px 0px rgba(0, 0, 0, 0); 
+						input {
+							padding: 0.7%;
+							color: @serach-input;
+							font-size:normal;
+							border:4px solid @yellow-clor;
+						}
+					}
+				}
+			}
+			.bottom-navs {
+				ul {
+					li {
+						display: block;
+						line-height: 3;
+						width:100%;
+					}
+				}
+			}
+		}
+		.bottom-navbar {
+			margin-right:2%;
+		}
+	}
+	/*** *****************************  Media Query 767px Tablet View ********************************** ***/
+	/*** *****************************  Media Query 768px Tablet View ********************************** ***/
+	@media (min-width: 768px) and (max-width: 1024px) {
+		/*** ***************************** Navbar Start ********************************** ***/
+		nav {
+			.top-left-nav {
+				margin: 1.5% 0 1% 0;
+			}
+			.top-right-nav {
+				margin: 1% 0 1% 0;
+			}
+			li {
+				a {
+					img {
+						width:11%;
+						margin-right: 2%;
+					}
+					.badge {
+						margin:0 0 1% -6%;
+					}
+				}
+				.nav-book {
+					img {
+						width:7%;
+					}
+				}
+			}
+		}
+		/*** ***************************** Navbar End ********************************** ***/
+		.red-band {
+			margin-top: 0.2%;
+		}
+		.gallery {
+			img {
+				width:97%;
+			}
+		}
+		.img-gallery {
+			.bubble {
+				margin:3% 0 0 15%;
+				font-size: 12px;
+			}
+			.italy {
+				margin-left: 15%;
+				font-size: 12px;
+			}
+			.focain {
+				img {
+					width: 24%;
+					margin-left: 22%;
+				}
+			}
+		}
+		/*** ***************************** Header Start ********************************** ***/
+		.header {
+			margin-left: 12%;
+			.header-left-part {
+				margin-left: 1%;
+			}
+			.header-right-part {
+				margin: -7% 1% 0% 65%;
+			}
+		}
+		/*** ***************************** Header End ********************************** ***/
+		/*** ***************************** Product List Start ********************************** ***/
+		.sec-sort-list {
+			span {
+				width:100%;
+				margin-left: -4%;
+			}
+		}
+		.banner-red {
+			button {
+				margin: -3.8% -1.3% -9.9%;
+				padding:  0.9% .7% 0.8%;
+			}
+		}
+		section {
+			.sorting-list {
+				margin-left: 1%;
+    			width: 97%;
+			}
+		}
+		/*** ***************************** Product List End  ********************************** ***/
+		/*** ***************************** Product Detail Start ********************************** ***/
+		.car-slider {
+        	margin-left: 6.5%;
+			width: 100%;
+		}
+		.download-text {
+			margin-right: 85%;
+		}
+		/*** ***************************** Product Detail End ********************************** ***/
+		/*** ***************************** Asidebar Start ********************************** ***/
+		.asidebar {
+			padding:1%;
+				.download-text {
+					margin: 5% 85% 1% 12%;
+				}
+				.aside-pagi {
+				margin: -13% 0 2% 69%;
+				.aside-pagi-list {
+					display: block;
+					border-radius:0px;
+					li {
+						a {
+							color:@top-nav;
+						}
+					}
+				}
+			}
+			.toggle {
+				position: absolute;
+				margin: -4.9% 0 0 46%;
+			}
+			.aside-star {
+				margin-top: -1.2%;
+			}
+			.add-to-shop {
+				margin: -10% 3% 3% 4%;
+				padding: 1.5% 1% 4% 1%;
+			}
+		}
+		/*** ***************************** Asidbar End ********************************** ***/
+		/*** ***************************** Bottom Navs Start ********************************** ***/
+		.bottom-navs {
+			li {
+				display: block;
+				line-height: 3;
+				width:100%;
+			}
+		}
+		.multi-drop {
+			min-width: 200px;
+		}
+		.slider {
+			margin-top: 2%;
+		}
+		.shopping-slider {
+			margin-bottom: -9%;
+		}
+		.img-gallery {
+			img {
+				width:40%;
+			}
+			.focain {
+				text-align:center;
+				img {
+					width:20%;
+				}
+			}
+			.add-wish {
+				margin-top:36%;
+			}
+			.focain {
+				img {
+					margin-left: 55%;
+				}
+			}
+		}
+		/*** ***************************** Bottom Navs End ********************************** ***/
+	}
+/*** *****************************  Media Query 768px Tablet View ********************************** ***/
